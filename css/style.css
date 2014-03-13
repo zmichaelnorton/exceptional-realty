@@ -1,89 +1,68 @@
 @import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script);
 
-/* This 
-is 
-a comment! */
+/*////////// GLOBAL //////////*/
 
-/* CSS Syntax:
-
-selector {
-  property: value;
-  property: value;
+h3 {
+  margin: 0 0 10px;
 }
 
-*/
-
-/* Type selector */
-
-p { /* select all <p> */
+p { 
   font-size: 1em; /* 16px, ?pt, 100%, 1em */
   line-height: 1.5em;
 }
 
+figure {
+  margin: 0 0 10px;
+}
+
 figcaption {
-  /*font-weight: normal;
-  font-size: 0.75em;
-  line-height: 1.5em;
-  font-family: Georgia, "New Times Roman", serif;*/
   font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
   color: #777;
   text-align: right;
 }
 
-/* Class selector (applied to as many elements as you like) */
-
-.milk-text { /* select elements with class="milk-text" */
+.milk-text {
   font: bold 2.6em 'Elsie Swash Caps', cursive;
   color: white;
   text-shadow: 0 2px 3px #000;
 }
 
-/* ID selector (apply to one unique element per page) */
 
-#logo { /* select elements with id="logo" */
-  
-}
 
-/* Descendent Selector */
+/*////////// BACKGROUNDS //////////*/
 
-#logo h1 { /* selects <h1> if inside the id="logo" */
-  font-family: 'Clicker Script', cursive;
-}
 
-#logo h2 {
-  font-family: 'Elsie Swash Caps', cursive;
-}
-
-/* Psuedo Selector */
-
-#details a:link, #details a:visited {
-  color: black;
-  text-decoration: none;
-}
-
-#details a:hover {
-  color: black;
-  text-decoration: underline;
-}
-
-#details a:active {
-  color: red;
-}
 
 /*/////// MEDIA ////////*/
 
-img, video, audio {
-  max-width: 100%;
+img, video, audio, iframe, table, form {
+  width: 100%; /* IE */
+  max-width: 100%; /* FF, Safari, Chrome */
 }
 
-/*/////// LAYOUT ////////*/
+/*////////// FIXES //////////*/
 
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+.clear {
+  clear:both;
+}
+
+/*/////// LAYOUT ////////*/
 
 .wrapper {
   width: 960px;
@@ -106,15 +85,6 @@ img, video, audio {
   background: #ccc;
 }
 
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  height: 0;
-  line-height: 0;
-}
-
 [class*="col-"] {
   margin-left: 2%;
 }
@@ -123,27 +93,11 @@ img, video, audio {
   margin-left: 0%;
 }
 
-/*/////// SECTIONS ////////*/
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #fff;
-  z-index: 1;
-}
-
-section {
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
 /*/////// SOCIAL ////////*/
 
 #social {
   position: fixed;
-  top: 200px;
+  top: 185px;
   right: 20px;
   width: 40px;
   z-index: 1;
@@ -155,3 +109,57 @@ section {
   height: 40px;
   background: yellow;
 }
+
+/*////////// HEADER //////////*/
+
+
+
+/*////////// NAVBAR //////////*/
+
+
+
+/*////////// LOGO //////////*/
+
+
+
+#logo h1 {
+  font-family: 'Clicker Script', cursive;
+}
+
+#logo h2 {
+  font-family: 'Elsie Swash Caps', cursive;
+}
+
+/*////////// MAIN SECTIONS //////////*/
+
+section {
+  padding: 30px;
+  margin-bottom: 20px;
+
+}
+
+/*////////// DETAILS //////////*/
+
+
+
+#details div {
+  height: 221px;
+}
+
+#details a:link, #details a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#details a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#details a:active {
+  color: red;
+}
+
+/*////////// FOOTER //////////*/
+
+
