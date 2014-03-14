@@ -131,14 +131,16 @@ img, video, audio, iframe, table, form {
   right: 20px;
   width: 40px;
   z-index: 1;
+  background: yellow;
 }
 
 #social a {
   display: block;
   width: 40px;
   height: 40px;
-  background: yellow;
 }
+
+
 
 /*////////// HEADER //////////*/
 
