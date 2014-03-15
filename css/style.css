@@ -7,7 +7,15 @@ h3 {
   margin: 0 0 10px;
 }
 
-p { 
+ul, ol {
+  margin-bottom: 10px;
+}
+
+li {
+  margin-left: 20px;
+}
+
+p, address { 
   font-size: 1em; /* 16px, ?pt, 100%, 1em */
   line-height: 1.5em;
 }
@@ -20,6 +28,57 @@ figcaption {
   font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
   color: #777;
   text-align: right;
+}
+
+table {
+  margin: 0 0 20px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+tr:nth-child(even) {
+  background: #efefef;
+}
+
+th, td {
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background: #555;
+  color: white;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0 3px 5px #ccc;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  margin-top: 5px;
+  width: 100px;
+  background: black;
+  color: white;
+  border-radius: 25px;
+  border: 0;
+}
+
+input[type="submit"]:hover {
+  background: #555;
+}
+
+iframe {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 403px;
 }
 
 .milk-text {
